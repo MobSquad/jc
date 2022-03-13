@@ -1,17 +1,16 @@
 <template>
-  <div class="flex bg-slate-500">
-     <h1>Hello world</h1>
-  </div>
+  <header-view></header-view>
+  <router-view/>
 </template>
 
 <script>
 import "./assets/style.css";
-
-// import HelloWorld from './components/HelloWorld.vue'
+  import HeaderView from '@/components/HeaderView.vue';
 
 export default {
   name: 'App',
   components: {
+    HeaderView,
   }
 }
 </script>
